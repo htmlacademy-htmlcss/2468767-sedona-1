@@ -3,23 +3,44 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../2468767-sedona-1/css/css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
-    <header>
-      <nav>
+    <header class="main-header">
+      <nav class="main-nav">
         <img src="../2468767-sedona-1/img/logo.png" alt="Логотип Седона">
-        Главная
-        О Седоне
-        Гостиницы
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a href="#home">Главная</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#description"> О Седоне</a>
+          </li>
+          <li class="site-navigation-item"></li>
+          <a href="#hotels">Гостиницы</a>
+          </li>
+          <li class="site-navigation-item"></li>
+          <a href="#hotels"><img src="../2468767-sedona-1/img/search.svg" alt="Поиск"></a>
+          </li>
+          <li class="site-navigation-item"></li>
+          <a href="#"><img src="../2468767-sedona-1/img/heart.svg" alt="Избранное"></a>
+          </li>
+        </ul>
+        <button type="button" name="hotels-button">Хочу сюда!</button>
       </nav>
-      Хочу сюда!
+
     </header>
     <main>
-      <img src="../2468767-sedona-1/img/index-background.jpg" alt="Горы">
+
+      <img id="home" src="../2468767-sedona-1/img/index-background.jpg" alt="Горы">
+
       <section>
-        <h1> Седона — небольшой городок в Аризоне,
+        <h1 id="description"> Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h1>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
@@ -71,7 +92,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="hotels">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         ПОИСК ГОСТИНИЦЫ В седоне
