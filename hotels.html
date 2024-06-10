@@ -3,6 +3,11 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HTML Academy: Седона</title>
   </head>
 
   <body>
@@ -10,47 +15,81 @@
       <nav class="main-header-nav">
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a href="../2468767-sedona-1/index.html">Главная</a>
+            <a href="./index.html">Главная</a>
           </li>
           <li class="site-navigation-item">
             <a href="#"> О Седоне</a>
           </li>
-          <li class="site-navigation-item"></li>
-          <a href="#">Гостиницы</a>
-          </li>
-          <li class="site-navigation-item"></li>
-          <a href="#"><img src="../2468767-sedona-1/img/search.svg" alt="Поиск"></a>
-          </li>
-          <li class="site-navigation-item"></li>
-          <a href="#"><img src="../2468767-sedona-1/img/heart.svg" alt="Избранное"></a>
+          <li class="site-navigation-item">
+            <a href="./hotels.html">Гостиницы</a>
           </li>
         </ul>
-        <button type="button" name="hotels-button">Хочу сюда!</button>
       </nav>
+      <div>
+        <a href="#"><img src="./img/search.svg" alt="Поиск"></a>
+        <a href="#"><img src="./img/heart.svg" alt="Избранное"></a>
+        <a href="#">Хочу сюда!</a>
+      </div>
     </header>
+    <main>
+      <section>
+        <h1 class="hotel">Гостиницы Седоны</h1>
+      </section>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <p>Инфраструктура:</p>
+        <input type="checkbox" name="infrastructure" id="infrastructure-pool" checked>
+        <label for="infrastructure-pool">Бассейн</label>
+        <br>
+        <input type="checkbox" name="infrastructure" id="infrastructure-parking" checked>
+        <label for="infrastructure-parking">Бассейн</label>
+        <br>
+        <input type="checkbox" name="infrastructure" id="infrastructure-wi-fi">
+        <label for="infrastructure-wi-fi">WI-FI</label>
+        <p>Тип жилья:</p>
+        <label>
+          <input type="radio" name="type-of-housing" value="hotel" checked> Гостиница
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="type-of-housing" value="motel">Мотель
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="type-of-housing" value="apartments">Апартаменты
+        </label>
+        <br>
+        <input type="submit" value="Применить">
+        <br>
+        <input type="reset" value="Сбросить">
+      </form>
+    </main>
     <section class="newsletter">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <input type="email" name="Ваш e-mail">
-      <button type="button" name="e-mail-button">Подписаться</button>
     </section>
+    <form action="https://htmlacademy.ru/" method="post">
+      <label>
+        <input type="email" name="e-mail" value="Ваш e-mail">
+      </label>
+      <input type="submit" value="Подписаться">
+    </form>
     </main>
     <footer class="main-footer">
       <ul class="social-list">
         <li class="social-list-item">
-          <a href="https://vk.com/htmlacademy"><img src="/img/social-vk.svg" width="24" height="14" alt="VK"></a>
+          <a href="https://vk.com/htmlacademy"><img src="./img/social-vk.svg" width="24" height="14" alt="VK"></a>
         </li>
         <li class="social-list-item">
-          <a href="https://t.me/htmlacademy"><img src="/img/social-telegram.svg" width="18" height="16"
+          <a href="https://t.me/htmlacademy"><img src="./img/social-telegram.svg" width="18" height="16"
               alt="Telegram"></a>
         </li>
         <li class="social-list-item">
-          <a href="https://www.youtube.com/user/htmlacademyru"><img src="/img/youtube.svg" width="22" height="17"
+          <a href="https://www.youtube.com/user/htmlacademyru"><img src="./img/youtube.svg" width="22" height="17"
               alt="Youtube"></a>
         </li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/"><img src="/img/logo_htmlacademy.svg" alt="Логотип HTML"></a>
+      <a href="https://htmlacademy.ru/"><img src="./img/logo_htmlacademy.svg" alt="Логотип HTML"></a>
     </footer>
   </body>
 
