@@ -8,6 +8,22 @@ body {
   width: 1200px;
   height: 485px;
 }
+.welcome2{
+
+  background-image: url("../img/Vector.png");
+  width: 1200px;
+  height: 485px;
+  background-repeat:no-repeat;
+  background-position: center bottom;
+}
+.welcome3{
+  background-image: url("../img/welcome.svg");
+  width: 1200px;
+  height: 485px;
+  background-repeat:no-repeat;
+  background-position: center center;
+
+}
 
 .rating-mini {
   display: inline-block;
