@@ -10,7 +10,8 @@ body {
   color: #000;
   text-decoration: none;
 }
-.site-navigation{
+
+.site-navigation {
   width: 1200px;
 }
 
@@ -19,19 +20,21 @@ body {
   width: 1200px;
   height: 485px;
 }
-.welcome2{
+
+.welcome2 {
 
   background-image: url("../img/Vector.svg");
   width: 1200px;
   height: 485px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center bottom;
 }
-.welcome3{
+
+.welcome3 {
   background-image: url("../img/welcome.svg");
   width: 1200px;
   height: 485px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
 
 }
@@ -50,4 +53,21 @@ body {
 
 .rating-mini > span:before {
   content: '★';
+}
+
+.filter {
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+.filter::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-image: url("../img/index-background.svg");
+  width: 1200px;
+  height: 485px;
+  filter: blur(5px);
+
 }
