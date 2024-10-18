@@ -15,13 +15,13 @@ body {
 }
 
 .welcome {
-  background-image: url("../img/index_background.jpg");
+  background-image: url("../img/index-background.svg");
   width: 1200px;
   height: 485px;
 }
 .welcome2{
 
-  background-image: url("../img/Vector.png");
+  background-image: url("../img/Vector.svg");
   width: 1200px;
   height: 485px;
   background-repeat:no-repeat;
