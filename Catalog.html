@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>HTML Academy: Седона</title>
+    <title>Каталог</title>
   </head>
 
   <body>
@@ -38,40 +38,39 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-inner">
       <section class="filter">
-        <h1 class="hotel">Гостиницы Седоны</h1>
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a href="./index.html"><img src="./img/home.svg" width="13px" height="15px" alt="Домой"></a>
+            <a class="breadcrumbs-link" href="./index.html"><img src="./img/home.svg" width="13px" height="15px"
+                alt="Домой"></a>
           </li>
           <li class="breadcrumbs-item">
             <img src="./img/Vector2.svg" width="8px" height="5px" alt="Домой">
           </li>
           <li class="breadcrumbs-item">
-            Гостиницы
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-        <fieldset>
-          <legend>Инфраструктура:</legend>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
             <div class="infrastructure">
-              <input type="checkbox" name="infrastructure" value="pool" id="infrastructure-pool" checked>
+              <input type="checkbox" name="infrastructure-pool" value="pool" id="infrastructure-pool" checked>
               <label for="infrastructure-pool">Бассейн</label>
             </div>
             <div class="infrastructure">
-              <input type="checkbox" name="infrastructure" value="parkibg" id="infrastructure-parking" checked>
+              <input type="checkbox" name="infrastructure-parking" value="parkibg" id="infrastructure-parking" checked>
               <label for="infrastructure-parking">Парковка</label>
             </div>
             <div class="infrastructure">
-              <input type="checkbox" name="infrastructure" value="WI-FI" id="infrastructure-wi-fi">
+              <input type="checkbox" name="infrastructure-wi-fi" value="WI-FI" id="infrastructure-wi-fi">
               <label for="infrastructure-wi-fi">WI-FI</label>
             </div>
-          </form>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
             <div class="type-of-housing">
               <label>
                 <input type="radio" name="type-of-housing" value="hotel" checked> Гостиница
@@ -87,30 +86,36 @@
                 <input type="radio" name="type-of-housing" value="apartments">Апартаменты
               </label>
             </div>
-          </form>
-        </fieldset>
-        <fieldset>
-          <legend>Стоимость, ₽: </legend>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость, ₽: </legend>
             <label>от<input type="text" name="price-min" value="0"></label>
             <label>до<input type="text" name="price-max" value="9000"></label>
-          </form>
-
-        </fieldset>
-        <div class="submit">
-          <input type="submit" value="Применить">
-        </div>
-        <div class="reset">
-          <input type="reset" value="Сбросить">
-        </div>
+          </fieldset>
+          <div class="submit">
+            <input type="submit" value="Применить">
+          </div>
+          <div class="reset">
+            <input type="reset" value="Сбросить">
+          </div>
+        </form>
       </section>
       <section class="catalog">
-        <h2>Найдено гостиниц: 38</h2>
+        <h2>Найдено гостиниц:<span>38</span></h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать по одной карточке</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать списком</span>
+        </a>
       </section>
       <section>
         <article>
@@ -181,6 +186,28 @@
           <input type="submit" value="Подписаться">
         </form>
       </section>
+      <section >
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="main-footer">
       <ul class="social-list">
@@ -188,7 +215,7 @@
           <a href="https://vk.com/htmlacademy"><img src="./img/social_vk.svg" width="24.0001" height="14" alt="VK"></a>
         </li>
         <li class="social-list-item">
-          <a href="https://t.me/htmlacademy"><img src="./img/social _tg.svg" width="22" height="17" alt="Telegram"></a>
+          <a href="https://t.me/htmlacademy"><img src="./img/social_tg.svg" width="22" height="17" alt="Telegram"></a>
         </li>
         <li class="social-list-item">
           <a href="https://www.youtube.com/user/htmlacademyru"><img src="./img/youtube.svg" width="22" height="17"
