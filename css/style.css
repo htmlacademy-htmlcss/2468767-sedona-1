@@ -19,7 +19,7 @@ body {
 }
 
 .welcome {
-  background-image: url("../img/index_background.jpg");
+  background-image: url("../img/index-background.jpg");
   width: 1200px;
   height: 485px;
 }
@@ -68,7 +68,7 @@ body {
   content: '';
   position: absolute;
   z-index: -1;
-  background-image: url("../img/index_background.jpg");
+  background-image: url("../img/index-background.jpg");
   width: 1200px;
   height: 485px;
   filter: blur(5px);
