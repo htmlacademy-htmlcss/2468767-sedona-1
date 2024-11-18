@@ -102,21 +102,23 @@
       </section>
       <section class="catalog">
         <h2>Найдено гостиниц:<span>38</span></h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать по одной карточке</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать списком</span>
-        </a>
+        <div class="sorting-container">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать по одной карточке</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать списком</span>
+          </a>
       </section>
+      </div>
       <section>
         <article>
           <img src="./img/hotel_1.jpg" alt="Вид на выход с ущелья">
@@ -186,7 +188,7 @@
           <input type="submit" value="Подписаться">
         </form>
       </section>
-      <section >
+      <section>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current" href="#">1</a>
