@@ -170,3 +170,9 @@ text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
 }
+.main-header{
+  display: grid;
+  grid-template-columns: 140px 339px 268px;
+  padding: 28px;
+
+}
