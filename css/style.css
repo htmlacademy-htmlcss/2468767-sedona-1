@@ -73,106 +73,188 @@ body {
   height: 485px;
   filter: blur(5px);
 }
-.site-navigation{
-font-family: "PT Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px;
-text-transform: capitalize;
-}
-.navigation-user{
-font-family: "PT Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px;
-text-transform: uppercase;
+
+.site-navigation {
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
 }
 
-a{
+.navigation-user {
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+a {
   color: #000;
   text-decoration: none;
 }
 
-h1{
+h1 {
   font-family: "PT Sans";
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px;
-text-transform: uppercase;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
-h3{
+
+h3 {
   font-family: "PT Sans";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px;
-text-transform: uppercase;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
 }
-ul{
-  list-style-type:none;
+
+ul {
+  list-style-type: none;
 }
-.reasons{
-font-family: "PT Sans";
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
-}
-.inner-header-title{
+
+.reasons {
   font-family: "PT Sans";
-font-size: 60px;
-font-style: normal;
-font-weight: 700;
-line-height: 78px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }
-.breadcrumbs-item{
+
+.inner-header-title {
   font-family: "PT Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 21px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px;
 }
-legend{
+
+.breadcrumbs-item {
   font-family: "PT Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px;
-text-transform: capitalize;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
 }
-.infrastructure .type-of-housing{
+
+legend {
   font-family: "PT Sans";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 23px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
 }
-.submit .reset{
+
+.infrastructure .type-of-housing {
   font-family: "PT Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px;
-text-transform: uppercase;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
 }
-h2{
+
+.submit .reset {
   font-family: "PT Sans";
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px;
-text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
 }
+
+h2 {
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
 .sorting-container {
   color: #000000;
   background-color: #ffffff;
 }
-.main-header{
-  display: grid;
-  grid-template-columns: 140px 339px 268px;
-  padding: 28px;
 
+.main-header {
+  display: flex;
+  width: 1200px;
+  height: 64px;
+}
+
+.header-logo {
+  width: 140px;
+  height: 70px;
+}
+
+.site-navigation {
+  display: flex;
+  width: 339px;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navigation-user {
+  display: flex;
+  width: 268px;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 862px;
+  margin-right: 0;
+}
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  height: 70px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  width: 142px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.phone {
+  width: 331px;
+  margin-left: 195px;
+  margin-right: 194px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "PT Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 115px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  height: 385px;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
