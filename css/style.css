@@ -1,21 +1,37 @@
+html {
+  height: 100%;
+}
+
 body {
   color: #000;
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.site-navigation-item a {
+.main-container {
+  flex-grow: 1;
+}
 
-  font-size: 20px;
-  line-height: 24px;
-  color: #000;
-  text-decoration: none;
+.main-header-nav {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .site-navigation {
-  width: 1200px;
+  width: 339px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 368px;
+  margin-left: auto;
 }
 
 .welcome {
@@ -182,6 +198,7 @@ h2 {
   color: #000000;
   background-color: #ffffff;
 }
+
 .main-footer {
   display: flex;
   justify-content: space-around;
@@ -228,9 +245,21 @@ h2 {
   margin-left: 0;
   margin-right: 0;
   padding: 0 10px 0 10px;
-
 }
-.features-list-item{
-  padding: 80px 85px 80px 85px;
 
+.features-list-item {
+  padding: 80px 85px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
