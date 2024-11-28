@@ -71,10 +71,16 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1200px;
+  height: 1155px;
   margin: 0;
   padding: 103px 85px;
   text-align: center;
+
 }
+.advantages-list-item{
+  flex-basis: 400px;
+}
+
 
 .rating-mini {
   display: inline-block;
