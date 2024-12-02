@@ -12,6 +12,7 @@
 </head>
 
   <body>
+
     <header class="main-header">
       <a href="https://htmlacademy.ru/"> <img src="./img/logo.png" alt="Логотип"></a>
       <nav class="main-header-nav">
@@ -39,7 +40,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+
+    <main class="main-inner main-container">
+      <div class="page-container">
       <section class="filter">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -101,6 +104,7 @@
           </div>
         </form>
       </section>
+    </div>
       <section class="catalog">
         <h2>Найдено гостиниц:<span>38</span></h2>
         <div class="sorting-container">
@@ -120,7 +124,8 @@
           </a>
       </section>
       </div>
-      <section>
+      <div class="page-footer-container">
+      <section class="catalog-hotel">
         <article>
           <img src="./img/hotel-1.jpg" alt="Вид на выход с ущелья">
           <h3>Amara Resort & Spa</h3>
@@ -179,16 +184,6 @@
           <span>Рейтинг: 5,0</span>
         </article>
       </section>
-      <section class="newsletter">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://htmlacademy.ru/" method="post">
-          <label>
-            <input type="email" name="e-mail" value="Ваш e-mail">
-          </label>
-          <input type="submit" value="Подписаться">
-        </form>
-      </section>
       <section>
         <ul class="pagination">
           <li class="pagination-item">
@@ -211,6 +206,19 @@
           </li>
         </ul>
       </section>
+      <section class="newsletter-catalog">
+        <div class="wrapper">
+          <h1 class="title">Подпишитесь на рассылку</h1>
+          <p class="reasons">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        </div>
+        <form action="https://htmlacademy.ru/" method="post">
+          <label>
+            <input type="email" name="e-mail" value="Ваш e-mail">
+          </label>
+          <input type="submit" value="Подписаться">
+        </form>
+      </section>
+    </div>
     </main>
     <footer class="main-footer">
       <ul class="social-list">
@@ -227,6 +235,7 @@
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/"><img src="./img/logo-htmlacademy.svg" alt="Логотип HTML"></a>
+    </div>
     </footer>
   </body>
 
