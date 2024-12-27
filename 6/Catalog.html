@@ -29,6 +29,7 @@
             <li class="site-navigation-item">
               <a href="./Catalog.html">Гостиницы</a>
             </li>
+            <hr class="site-navigation-2">
           </div>
         </ul>
         <ul class="navigation-user">
@@ -138,19 +139,41 @@
       <section class="catalog">
 
         <div class="sorting-container">
-          <h2>Найдено гостиниц:<span>38</span></h2>
+          <h2 class="sorting">Найдено гостиниц:<span>38</span></h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
           <a href="#" class="button button-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+              <path d="M4 0H0V6H4V0Z" fill="black"/>
+              <path d="M16 0H12V6H16V0Z" fill="black"/>
+              <path d="M10 0H6V6H10V0Z" fill="black"/>
+              <path d="M4 8H0V14H4V8Z" fill="black"/>
+              <path d="M16 8H12V14H16V8Z" fill="black"/>
+              <path d="M10 8H6V14H10V8Z" fill="black"/>
+              </svg>
             <span class="visually-hidden">Показать карточки</span>
           </a>
           <a href="#" class="button button-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+              <path d="M16 12H0V14H16V12Z" fill="black"/>
+              <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+              </svg>
             <span class="visually-hidden">Показать по одной карточке</span>
           </a>
           <a class="button" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+              <path d="M2 0H0V2H2V0Z" fill="black"/>
+              <path d="M16 0H4V2H16V0Z" fill="black"/>
+              <path d="M2 4H0V6H2V4Z" fill="black"/>
+              <path d="M16 4H4V6H16V4Z" fill="black"/>
+              <path d="M2 8H0V10H2V8Z" fill="black"/>
+              <path d="M16 8H4V10H16V8Z" fill="black"/>
+              <path d="M2 12H0V14H2V12Z" fill="black"/>
+              <path d="M16 12H4V14H16V12Z" fill="black"/>
+              </svg>
             <span class="visually-hidden">Показать списком</span>
           </a>
         </div>
@@ -167,55 +190,77 @@
                 <a class="hotel-button-link" href="https://htmlacademy.ru">подробнее</a>
                 <a class="hotel-button-link-2" href="https://htmlacademy.ru">в избранное</a>
               </div>
-              <div class="rating-mini">
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span></span>
+              <div class="rating-mini-active">
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span></span>
+                </div>
+                <span class="rating-1">Рейтинг: 8,5</span>
               </div>
-              <span>Рейтинг: 8,5</span>
             </article>
             <article class="amara">
-              <img src="./img/hotel-2.jpg" alt="Гора на рассвете">
-              <h3 class="hottel-title" >Villas at Poco Diablo</h3>
-              <span>Гостиница</span>
-              <span>От 5000 ₽</span>
-              <a href="https://htmlacademy.ru">"ПОДРОБНЕЕ"</a>
-              <input type="button" value="В ИЗБРАННОЕ">
-              <div class="rating-mini">
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
-                <span></span>
+              <img src="./img/hotel-2.jpg" width="300px" height="212px" alt="Гора на рассвете">
+              <h3 class="hottel-title">Villas at Poco Diablo</h3>
+              <div class="hotel-sale">
+                <span>Гостиница</span>
+                <span>От 5000 ₽</span>
               </div>
-              <span>Рейтинг: 9,2</span>
+              <div class="hotel-button">
+                <a class="hotel-button-link" href="https://htmlacademy.ru">подробнее</a>
+                <a class="hotel-button-link-3" href="https://htmlacademy.ru">в избранном</a>
+              </div>
+              <div class="rating-mini-active">
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span></span>
+                </div>
+                <span class="rating-1">Рейтинг: 9,2</span>
+              </div>
             </article>
             <article class="amara">
-              <img src="./img/hotel-3.jpg" alt="Вид на гору">
+              <img src="./img/hotel-3.jpg" width="300px" height="212px" alt="Вид на гору">
               <h3 class="hottel-title">Desert Quail Inn</h3>
-              <span>Гостиница</span>
-              <span>От 2500 ₽</span>
-              <a href="https://htmlacademy.ru">"ПОДРОБНЕЕ"</a>
-              <input type="button" value="В ИЗБРАННОЕ">
-              <div class="rating-mini">
-                <span class="active"></span>
-                <span class="active"></span>
-                <span class="active"></span>
+              <div class="hotel-sale">
+                <span>Гостиница</span>
+                <span>От 2500 ₽</span>
               </div>
-              <span>Рейтинг: 6,9</span>
+              <div class="hotel-button">
+                <a class="hotel-button-link" href="https://htmlacademy.ru">подробнее</a>
+                <a class="hotel-button-link-2" href="https://htmlacademy.ru">в избранное</a>
+              </div>
+              <div class="rating-mini-active">
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <span class="rating-1">Рейтинг: 6,9</span>
+              </div>
             </article>
+          </section>
+          <section class="catalog-hotel">
             <article class="amara">
               <img src="./img/hotel-4.jpg" alt="Вид на гору на закате">
               <h3 class="hottel-title">GreenTree Inn</h3>
-              <span>Гостиница</span>
-              <span>От 1500 ₽</span>
-              <a href="https://htmlacademy.ru">"ПОДРОБНЕЕ"</a>
-              <input type="button" value="В ИЗБРАННОЕ">
-              <div class="rating-mini">
-                <span class="active"></span>
-                <span class="active"></span>
+              <div class="hotel-sale">
+                <span>Гостиница</span>
+                <span>От 1500 ₽</span>
               </div>
-              <span>Рейтинг: 5,0</span>
+              <div class="hotel-button">
+                <a class="hotel-button-link" href="https://htmlacademy.ru">подробнее</a>
+                <a class="hotel-button-link-2" href="https://htmlacademy.ru">в избранное</a>
+              </div>
+              <div class="rating-mini-active">
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <span class="rating-1">Рейтинг: 5,0</span>
+              </div>
             </article>
           </section>
         </div>
