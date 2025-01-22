@@ -477,9 +477,13 @@ body {
   min-height: 358px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 158px 0 76px;
+  padding: 81px 85px;
   background-color: rgba(131, 179, 211, 0.122);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .features-list-item:nth-child(2n) {
@@ -498,7 +502,7 @@ body {
   width: 200px;
 }
 
-.house {
+/*.house {
   background-image: url("../img/house-icon.svg");
   background-position: center 55px;
 }
@@ -512,7 +516,7 @@ body {
   background-image: url("../img/souvenir-icon.svg");
   background-repeat: no-repeat;
   background-position: center 53px;
-}
+}*/
 
 .features-description {
   margin: 0 auto;
