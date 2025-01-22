@@ -313,6 +313,8 @@ body {
   background-image: url("../img/Vector.svg"), url("../img/index-background.jpg");
   padding-top: 51px;
   padding-bottom: 82px;
+  padding-left: 371px;
+  padding-right: 371px;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
@@ -410,7 +412,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   background-color: rgba(131, 179, 211, 0.2);
+  min-width: 400px;
 }
 
 .advantages-list-item:nth-child(2n) {
@@ -426,8 +430,9 @@ body {
 .blok-1 .advantages-container {
   background-color: #82b3d3;
   color: #ffffff;
-  padding-top: 103px;
-  padding-bottom: 96px;
+  /* padding-top: 103px;
+  padding-bottom: 96px;*/
+  padding: 103px 85px;
 }
 
 .reviews {
@@ -524,7 +529,9 @@ body {
   text-align: center;
   padding-top: 97px;
   padding-bottom: 96px;
-  width: 592px;
+  padding-left: 304px;
+  padding-right: 304px;
+  max-width: 592px;
   margin: 0 auto;
 }
 
@@ -590,8 +597,7 @@ body {
 }
 
 .newsletter {
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 258px 104px 258px;
 }
 
 .newsletter-index {
@@ -600,7 +606,6 @@ body {
 }
 
 .title-4 {
-  margin: 0 auto 20px;
   padding: 0;
   list-style: none;
   font-size: 30px;
@@ -608,7 +613,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  width: 600px;
+  min-width: 600px;
 }
 
 .reasons-2 {
@@ -669,6 +674,7 @@ body {
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .newsletter-button:hover {
@@ -732,6 +738,7 @@ body {
   width: 47px;
   height: 40px;
   color: #83b3d3;
+  cursor: pointer;
 }
 
 .social-list-link:hover {
@@ -1629,8 +1636,7 @@ body {
 }
 
 .product-list {
-  margin: 0 69px 39px;
-  padding: 0 0 43px;
+  padding: 40px 70px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 340px 20px 340px 20px 340px;
@@ -1696,9 +1702,9 @@ body {
   grid-column: 1/-1;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
   justify-content: space-between;
 }
 
@@ -1709,6 +1715,8 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+  justify-self: start;
+  align-self: start;
 }
 
 .product-card-price {
@@ -1718,15 +1726,19 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+  justify-self: end;
+  align-self: end;
 }
 
 .product-card-button {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 50px;
   text-align: center;
-  display: block;
-  padding: 8px 3px 8px;
   background-color: #756157;
   color: #ffffff;
   text-decoration: none;
