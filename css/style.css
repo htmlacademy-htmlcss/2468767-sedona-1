@@ -389,7 +389,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.blok-1 .advantages-title::before {
+.blok-advantages .advantages-title::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -425,7 +425,7 @@ body {
   padding-bottom: 96px;
 }
 
-.blok-1 .advantages-container {
+.blok-advantages .advantages-container {
   background-color: #82b3d3;
   color: #ffffff;
   /* padding-top: 103px;
@@ -437,7 +437,7 @@ body {
   padding-top: 64px;
 }
 
-.title-2 {
+.title-reviews {
   margin: 0 auto 20px;
   padding: 0;
   font-size: 30px;
@@ -705,11 +705,6 @@ body {
   width: 142px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.social-list-item {
-  width: 47px;
-  height: 40px;
 }
 
 .social-list-link {
