@@ -1784,6 +1784,7 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   border: none;
+  white-space: nowrap;
 
 }
 
@@ -1824,7 +1825,8 @@ body {
   background: url("../img/star.svg") 0 0 space;
   height: 17px;
   width: 18px;
-  margin-top: 11px;
+  justify-self: start;
+  align-self: center;
 }
 
 .product-card-stars-1 {
