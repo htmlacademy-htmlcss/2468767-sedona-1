@@ -362,6 +362,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex-direction: column;
+
 }
 
 .advantages-title {
@@ -420,9 +422,11 @@ body {
 }
 
 .advantages-container {
-  width: 400px;
+  /*width: 400px;
   padding-top: 113px;
-  padding-bottom: 96px;
+  padding-bottom: 96px;*/
+  padding: 103px 85px;
+  flex:0 0 25%;
 }
 
 .blok-advantages .advantages-container {
@@ -1766,7 +1770,7 @@ body {
 }
 
 .add-favorite-button {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   display: flex;
   padding: 8px 50px;
