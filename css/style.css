@@ -331,44 +331,34 @@ body {
   margin: 0 auto;
 }
 
-.slogan {
-  padding-top: 68px;
+
+.slogan-caption-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 69px 16px;
+  width: 100%;
+  height: 100%;
 }
 
 .slogan-caption {
-  margin: 0 auto 26px;
-  padding: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  width: 620px;
   background-color: #ffffff;
 }
 
 .slogan-text {
-  margin: 0 auto 90px;
-  padding: 0;
   text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  width: 700px;
 }
 
-/*.advantages-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-}*/
 .advantages-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -378,6 +368,8 @@ body {
 
 .advantages-img {
   grid-column: span 2;
+  width: 100%;
+  height: 100%;
 
 }
 .advantages-img img{
@@ -446,20 +438,19 @@ body {
 }
 
 .advantages-container {
-  /*width: 400px;
-  padding-top: 113px;
-  padding-bottom: 96px;*/
-  /* padding: 103px 85px; */
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 103px 85px
 
 }
 
 .blok-advantages .advantages-container {
   background-color: #82b3d3;
   color: #ffffff;
-  /* padding-top: 103px;
-  padding-bottom: 96px;*/
-  padding: 103px 85px;
 }
 
 .reviews {
