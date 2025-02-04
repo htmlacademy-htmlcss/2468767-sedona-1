@@ -1537,7 +1537,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 160px;
   margin: 0;
   padding: 0;
   list-style: none;
