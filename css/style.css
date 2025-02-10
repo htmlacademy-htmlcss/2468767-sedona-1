@@ -336,7 +336,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 25px;*/
   padding: 30px 16px;
   width: 100%;
   height: 100%;
@@ -355,13 +354,15 @@ body {
   text-transform: uppercase;
   background-color: #ffffff;
 }
-
+.search-title{
+  margin-bottom: 0;
+}
 .slogan-text {
   text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-   margin: auto;
+  margin: auto;
 }
 
 .advantages-list {
@@ -452,6 +453,7 @@ body {
 
 .features-list {
   margin: 0;
+  margin-top: 16px;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -508,8 +510,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 96px 16px;
+  padding: 76px 16px;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .search-button {
@@ -554,7 +557,12 @@ body {
 }
 
 .newsletter {
-  padding: 96px 5px 104px 5px;
+  padding: 76px 16px 97px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 
 }
 
@@ -713,6 +721,7 @@ body {
   text-decoration: none;
   display: inline-block;
   color: #000000;
+  margin-top: -10px;
 }
 
 .footer-phone:hover {
