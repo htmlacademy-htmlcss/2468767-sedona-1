@@ -312,10 +312,7 @@ body {
 .welcome {
   background-color: #79909e;
   background-image: url("../img/Vector.svg"), url("../img/index-background.jpg");
-  padding-top: 51px;
-  padding-bottom: 82px;
-  padding-left: 371px;
-  padding-right: 371px;
+  padding: 51px 16px 82px;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
@@ -323,6 +320,7 @@ body {
   min-height: 485px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin-top: -5px;
 }
 
 .welcome-image {
@@ -336,14 +334,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 16px;
+  gap: 25px;
+  padding: 69px 16px;
   width: 100%;
   height: 100%;
-  padding-bottom: 85px;
+  margin-bottom: 21px;
 }
 
 .slogan-title-reviews {
-  padding: 33px 16px;
+  padding: 64px 16px;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .slogan-caption {
@@ -353,6 +354,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .search-title {
@@ -364,7 +366,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  margin: auto;
+  margin: 0;
 }
 
 .advantages-list {
@@ -506,17 +508,6 @@ body {
   width: 230px;
 }
 
-.search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 76px 16px;
-  margin: 0;
-  margin-bottom: 15px;
-}
-
 .search-button {
   display: block;
   min-width: 376px;
@@ -532,8 +523,6 @@ body {
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 34px;
-
 }
 
 .search-button:hover {
@@ -563,9 +552,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 54px;
   width: 100%;
   height: 100%;
 
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .newsletter-index {
@@ -583,6 +580,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   min-width: 600px;
+  margin: 0;
 }
 
 .reasons {
@@ -591,7 +589,7 @@ body {
   line-height: 26px;
   text-align: center;
   display: block;
-  margin: 0 auto 55px;
+  margin: 0;
   padding: 0;
   width: 600px;
 }
@@ -1137,18 +1135,28 @@ body {
 
 .catalog-header {
   background: #435561 url("../img/filter-bg.jpg") no-repeat 0 0/cover;
-  padding: 30px 65px 65px;
-  margin-top: -7px;
+  padding: 35px 70px 70px;
+  margin-top: -5px;
   height: 100%;
+  display: block;
+}
+
+.catalog-header-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
 
 .inner-header-title {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
   color: #ffffff;
+  align-items: flex-start;
 }
 
 .breadcrumbs {
@@ -1157,8 +1165,7 @@ body {
   align-items: center;
   column-gap: 8px;
   padding: 0;
-  margin-top: 8px;
-  margin-bottom: 45px;
+  margin: 0;
   padding-top: 3px;
 }
 
@@ -1208,24 +1215,19 @@ body {
   opacity: 0.3;
 }
 
-.filters-form {
-  margin-left: -2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.filter-catalog {
   display: flex;
-  margin-top: -2px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  margin-top: 40px;
 }
 
-.filter-catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.filter-catalog-grou {
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 70px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: stretch;
 }
 
 .catalog-filter-group {
@@ -1235,8 +1237,7 @@ body {
 }
 
 .range-group {
-  margin-left: 80px;
-  justify-content: space-between;
+  margin: 0;
 }
 
 .catalog-filter-title {
@@ -1249,13 +1250,13 @@ body {
 }
 
 .catalog-filter-list {
-  padding: 0 0 0 2px;
+  padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.catalog-filter-item:not(:last-child) {
-  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .control {
@@ -1603,7 +1604,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 340px 20px 340px 20px 340px;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   border-bottom: 1px solid #e6e6e6;
   list-style: none;
@@ -1686,7 +1687,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 50px;
+  padding: 8px 8px;
   text-align: center;
   background-color: #756157;
   color: #ffffff;
@@ -1818,6 +1819,7 @@ body {
   line-height: 36px;
   text-align: center;
   border-radius: 4px;
+  padding: 5px;
 }
 
 .pagination-link:hover {
