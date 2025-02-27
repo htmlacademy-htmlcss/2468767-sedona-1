@@ -15,12 +15,10 @@
     <div class="container">
       <header class="main-header">
         <nav class="main-header-nav">
+          <a class="header-logo" href="https://htmlacademy.ru/"> <img src="./img/logo.png" alt="Логотип"></a>
           <ul class="site-navigation">
             <li class="site-navigation-item">
-              <a class="header-logo" href="https://htmlacademy.ru/"> <img src="./img/logo.png" alt="Логотип"></a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="./index.html" class="siti-menu-link">Главная</a>
+              <a href="./index.html" class="siti-menu-link ">Главная</a>
             </li>
             <li class="site-navigation-item">
               <a href="#" class="siti-menu-link"> О Седоне</a>
@@ -58,7 +56,7 @@
       </header>
       <main class="main-inner main-container" data-test="main">
         <section class="catalog-header">
-          <div class="catalog-header-form">
+          <header  class="catalog-header-form">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
@@ -84,7 +82,7 @@
                 <a class="breadcrumbs-link" href="#">Гостиницы</a>
               </li>
             </ul>
-          </div>
+          </header>
           <header class="filters-form" data-test="filter">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="filter-catalog" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -159,7 +157,7 @@
         </section>
         <section class="catalog-products" data-test="catalog">
           <div class="sorting-container">
-            <h2 class="sorting">Найдено гостиниц:<span>38</span></h2>
+            <h2 class="sorting">Найдено гостиниц: <span>38</span></h2>
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">Сначала популярные</option>
               <option value="cheap">Сначала дешёвые</option>
@@ -223,9 +221,13 @@
                 <p class="product-card-type product-card-price">От 4000 ₽</p>
                 <a class="product-card-button" href="#">подробнее</a>
                 <button class="product-card-button add-favorite-button" type="button">в избранное</button>
-                <p class="product-card-stars product-card-stars-4">
-                  <span class="visually-hidden">4 звезды</span>
-                </p>
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                 </div>
                 <p class="product-card-raiting">
                   Рейтинг: <span>8,5</span>
                 </p>
@@ -243,9 +245,12 @@
                 <a class="product-card-button" href="#">подробнее</a>
                 <button class="product-card-button add-favorite-button added-favorite-button" type="button">в
                   избранном</button>
-                <p class="product-card-stars product-card-stars-4">
-                  <span class="visually-hidden">4 звезды</span>
-                </p>
+                  <div class="rating-mini">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                   </div>
                 <p class="product-card-raiting">
                   Рейтинг: <span>9,2</span>
                 </p>
@@ -261,9 +266,11 @@
                 <p class="product-card-type product-card-price">От 2500 ₽</p>
                 <a class="product-card-button" href="#">подробнее</a>
                 <button class="product-card-button add-favorite-button" type="button">в избранное</button>
-                <p class="product-card-stars product-card-stars-3">
-                  <span class="visually-hidden">3 звезды</span>
-                </p>
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                 </div>
                 <p class="product-card-raiting">
                   Рейтинг: <span>6,9</span>
                 </p>
@@ -279,9 +286,10 @@
                 <p class="product-card-type product-card-price">От 1500 ₽</p>
                 <a class="product-card-button" href="#">подробнее</a>
                 <button class="product-card-button add-favorite-button" type="button">в избранное</button>
-                <p class="product-card-stars product-card-stars-2">
-                  <span class="visually-hidden">2 звезды</span>
-                </p>
+                <div class="rating-mini">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                 </div>
                 <p class="product-card-raiting">
                   Рейтинг: <span>5,0</span>
                 </p>
