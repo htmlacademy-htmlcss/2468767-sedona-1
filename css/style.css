@@ -336,14 +336,15 @@ body {
   height: 100%;
   width: 100%;
 }
-.advantages-img {
-  grid-column: span 2;
-  height: 100%;
-  width: 100%;
-}
 
 .advantages-list-item img {
   display: block;
+  height: 100%;
+  width: 100%;
+}
+.advantages-list-item:nth-child(7n+2), .advantages-list-item:nth-child(7n+6){
+  grid-column: span 2;
+
 }
 
 .list-reset {
@@ -394,7 +395,7 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-list-item:nth-child(2n) {
+.advantages-list-item:nth-child(7n+3), .advantages-list-item:nth-child(7n+5) {
   background-color: rgba(131, 179, 211, 0.1);
 }
 
